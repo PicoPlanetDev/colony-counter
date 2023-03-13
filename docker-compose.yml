@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-  colony-counter:
+  app:
     build: .
     ports:
       - 8501:8501
