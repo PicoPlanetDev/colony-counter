@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  colony-counter:
+    build: .
+    ports:
+      - 8501:8501
+
+networks:
+  default:
+    external: true
+    name: nginxproxymanager
