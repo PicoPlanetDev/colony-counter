@@ -4,10 +4,21 @@ import streamlit as st
 
 # @st.cache_data
 def load_image():
-    image_file = st.file_uploader("Upload Images")
+    if 'use_sample_image' not in st.session_state:
+        st.session_state['use_sample_image'] = False
 
-    if st.button('Use sample image'):
-        image_file = open('sample.jpg', 'rb') 
+    if st.session_state['use_sample_image']:
+        image_file = open('sample.jpg', 'rb')
+        st.text('Done playing with the sample image?')
+        if st.button('Upload your own'):
+            st.session_state['use_sample_image'] = False
+            st.experimental_rerun()
+    else:
+        image_file = st.file_uploader("Upload Images")
+        st.text('Or, try out the sample image:')
+        if st.button('Use sample image'):
+            st.session_state['use_sample_image'] = True
+            st.experimental_rerun()
 
     # If no image is uploaded, stop the app
     if image_file is None:
@@ -72,4 +83,4 @@ if __name__ == '__main__':
     detect(image, gray)
 
     # Assume the image is processed, put a done message
-    info.info('Done!', icon='✅')
+    info.info('Done, scroll down to see results!', icon='✅')
