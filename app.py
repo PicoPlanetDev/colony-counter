@@ -5,11 +5,14 @@ import streamlit as st
 # @st.cache_data
 def load_image():
     image_file = st.file_uploader("Upload Images")
-    
+
+    if st.button('Use sample image'):
+        image_file = open('sample.jpg', 'rb') 
+
     # If no image is uploaded, stop the app
     if image_file is None:
-        st.error('No image uploaded', icon='❌')
-        st.stop()    
+        # st.error('No image uploaded', icon='❌')
+        st.stop()
 
     # Get the image as a numpy array
     image = cv2.imdecode(np.frombuffer(image_file.read(), np.uint8), -1)

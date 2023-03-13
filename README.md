@@ -4,6 +4,8 @@ A little helper I made while taking AP Biology.
 It uses OpenCV to detect and count E. coli bacteria colonies.
 The default settings are optimized for counting pGLO colonies under UV light.
 
+**Disclaimer:** The supplied image, `test.jpg`, has been modified using image editing software to remove names written on the agar plate.
+
 ## Coming soon: hosted version
 
 ## Usage
