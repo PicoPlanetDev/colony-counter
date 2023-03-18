@@ -4,6 +4,14 @@ services:
     build: .
     ports:
       - 8501:8501
+    labels:
+      - com.centurylinklabs.watchtower.enable=false
+      - homepage.group=Applications
+      - homepage.name=Colony Counter
+      - homepage.icon=/icons/colonycounter.png
+      - homepage.href=https://colony-counter.server.sigmondkukla.dev
+      - homepage.description=Tool for counting colonies on agar plates
+      - homepage.ping=https://colony-counter.server.sigmondkukla.dev
 
 networks:
   default:
