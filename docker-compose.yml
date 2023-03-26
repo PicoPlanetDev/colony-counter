@@ -12,6 +12,7 @@ services:
       - homepage.href=https://colony-counter.server.sigmondkukla.dev
       - homepage.description=Tool for counting colonies on agar plates
       - homepage.ping=https://colony-counter.server.sigmondkukla.dev
+  restart: unless-stopped
 
 networks:
   default:
