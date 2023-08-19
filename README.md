@@ -6,7 +6,9 @@ The default settings are optimized for counting pGLO colonies under UV light.
 
 **Disclaimer:** The supplied image, `test.jpg`, has been modified using image editing software to remove names written on the agar plate.
 
-## Coming soon: hosted version
+## Try it here
+
+I'm currently self hosting Colony Counter for anyone to use here: [colony-counter.server.sigmondkukla.dev](https://colony-counter.server.sigmondkukla.dev)
 
 ## Usage
 
