@@ -8,7 +8,9 @@ The default settings are optimized for counting pGLO colonies under UV light.
 
 ## Try it here
 
-I'm currently self hosting Colony Counter for anyone to use here: [colony-counter.server.sigmondkukla.dev](https://colony-counter.server.sigmondkukla.dev)
+I'm currently self hosting Colony Counter for anyone to use here: [colony-counter.server.sigmondkukla.dev](https://colony-counter.server.sigmondkukla.dev).
+
+Don't have an image available yet but still want to see how it works? Select `Use Sample Image` on the landing page!
 
 ## Usage
 
